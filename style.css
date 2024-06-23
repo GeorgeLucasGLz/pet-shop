@@ -1,0 +1,959 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+}
+
+header .logo-side {
+    width: 50px;
+    height: 50px;
+    margin-right: 100px;
+}
+
+header .logo-side img {
+    width: 100%;
+    height: 100%;
+}
+
+header nav.links {
+    display: flex;
+    gap: 30px;
+
+}
+
+.links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.links a:hover {
+    font-weight: bold;
+    color: rgb(247, 177, 137);
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+}
+
+/*---------MENU TOGGLE OFF----------------*/
+.btn-toggle-off {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.btn-toggle-off span {
+    background-color: rgb(44, 44, 44);
+    width: 70%;
+    height: 3px;
+    border-radius: 10px;
+}
+
+/*--------------------------------*/
+
+/*---------MENU TOGGLE ON----------------*/
+.toggle-on {
+
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 60px;
+    align-items: center;
+    background: rgba(255, 168, 118, 0.7);
+    z-index: 1000;
+    backdrop-filter: blur(6px);
+}
+
+.toggle-on a {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 10px black;
+}
+
+.btn-close {
+    top: 20px;
+    right: 20px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn-close span {
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.btn-close span:nth-child(1) {
+    transform: rotate(45deg) translate(2px, 2px);
+
+
+}
+
+.btn-close span:nth-child(2) {
+    transform: rotate(-45deg) translate(5px, -5px);
+
+
+}
+
+
+
+/*--------------------------------*/
+
+
+
+main {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+main .icons {
+    display: flex;
+    position: absolute;
+    width: 38%;
+    align-items: end;
+    justify-content: end;
+    height: 280px;
+    gap: 10px;
+    margin-left: 5px;
+
+
+}
+
+.icons .pote {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+
+}
+
+.box-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    position: absolute;
+    width: 38%;
+    height: 350px;
+
+}
+
+.box-info p {
+    max-width: 30%;
+
+}
+
+.box-contact {
+
+    width: 38%;
+    height: 395px;
+    padding-right: 2%;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 10px;
+
+}
+
+.box-contact button {
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(247, 177, 137);
+
+}
+
+.box-contact button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+
+main .center-box {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90vh;
+    margin-bottom: 50px;
+
+}
+
+main .box-title {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+
+}
+
+main .main-title {
+
+    padding-left: 50px;
+    letter-spacing: 10px;
+    font-size: 120px;
+    z-index: 0;
+    width: 50%;
+    line-height: 130px;
+    padding-top: 20px;
+
+}
+
+.main-title span {
+    height: 100%;
+    color: rgb(247, 177, 137);
+
+}
+
+main .cat-center {
+
+    z-index: 1;
+    position: absolute;
+    top: 100px;
+}
+
+.cat-center .circle-cat {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(247, 177, 137);
+
+}
+
+main .cat-center img {
+    width: 300px;
+    height: 100%;
+}
+
+main .pet-sides {
+
+    position: absolute;
+    top: 380px;
+    width: 38%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+.pet-sides img {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 100px;
+    object-fit: cover;
+    width: 270px;
+    height: 300px;
+}
+
+.pet-sides .pet-right {
+
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+}
+
+.box-github{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+   
+   
+}
+
+.box-github img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+}
+
+@media (max-width : 2650px) {
+
+    main .main-title {
+
+        width: 60%;
+    }
+
+    main .icons,
+    .box-info,
+    .box-contact {
+
+        width: 45%;
+    }
+
+    main .pet-sides {
+        width: 48%;
+
+    }
+
+}
+
+@media (max-width : 2200px) {
+
+    main .main-title {
+        width: 70%;
+
+    }
+
+    main .icons,
+    .box-info,
+    .box-contact {
+
+        width: 52%;
+    }
+
+    main .pet-sides {
+        width: 58%;
+
+    }
+
+}
+
+@media (max-width : 1880px) {
+
+    main .main-title {
+
+        width: 80%;
+
+    }
+
+    main .icons,
+    .box-info,
+    .box-contact {
+
+        width: 62%;
+    }
+
+    main .pet-sides {
+        width: 65%;
+
+    }
+
+
+}
+
+@media (max-width : 1660px) {
+
+    main .main-title {
+
+        width: 85%;
+
+    }
+
+    main .pet-sides {
+        width: 72%;
+
+    }
+}
+
+@media (max-width : 1550px) {
+
+    main .main-title {
+
+        width: 90%;
+
+    }
+
+    main .icons,
+    .box-info,
+    .box-contact {
+
+        width: 75%;
+    }
+
+    main .pet-sides {
+        width: 78%;
+
+    }
+}
+
+@media (max-width : 1450px) {
+
+    main .main-title {
+
+        width: 100%;
+
+    }
+
+
+}
+
+@media (max-width : 1300px) {
+
+    main .main-title {
+        font-size: 100px;
+        width: 100%;
+
+    }
+
+    main .icons,
+    .box-info,
+    .box-contact {
+
+        width: 87%;
+    }
+
+    main .pet-sides {
+        width: 88%;
+
+    }
+}
+
+@media (max-width : 1150px) {
+
+    main .main-title {
+        font-size: 100px;
+        width: 110%;
+
+    }
+
+    main .pet-sides {
+        width: 92%;
+
+    }
+}
+
+@media (max-width : 1115px) {
+
+    main .center-box {
+
+        margin-top: 40px;
+    }
+
+    header {
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+
+    header .btn-toggle-off {
+        display: flex;
+        margin-right: 20px;
+
+    }
+
+    header .logo-side {
+        margin-left: 30px;
+        margin-right: 0;
+    }
+
+    main .center-box {
+        margin-bottom: 50px;
+    }
+
+    header nav.links {
+        display: none;
+    }
+
+    main .box-title {
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    main .main-title {
+
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        letter-spacing: 1px;
+        line-height: 80px;
+        font-size: 80px;
+        z-index: 0;
+        width: 100%;
+        height: 200px;
+        padding-top: 0px;
+
+    }
+
+    .main-title span {
+
+        margin-right: 270px;
+
+    }
+
+    main .icons {
+
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        height: 155px;
+        margin-left: 0px;
+        padding-left: 300px;
+
+
+    }
+
+    .icons .pote {
+        width: 70px;
+        height: 70px;
+
+    }
+
+    main .pet-sides {
+        display: none;
+    }
+
+    main .cat-center {
+
+        z-index: 1;
+        position: absolute;
+        top: 320px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .box-info {
+
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        padding-right: 100px;
+
+    }
+
+    .box-info p {
+
+        max-width: 100%;
+
+    }
+
+    .box-contact {
+
+        width: 100%;
+        height: 290px;
+        padding-right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 10px;
+
+    }
+
+    .box-contact button {
+        cursor: pointer;
+        border-radius: 15px;
+        border: none;
+        color: white;
+        width: 80px;
+        height: 40px;
+        background-color: rgb(247, 177, 137);
+
+    }
+
+
+}
+
+@media (max-width: 633px) {
+
+    main .main-title {
+        font-size: 70px;
+        width: 100vw;
+    }
+
+    .main-title span {
+        margin-right: 240px;
+
+    }
+
+    .box-info {
+        padding-right: 40px;
+    }
+
+    main .icons {
+        padding-left: 270px;
+    }
+
+    .box-contact button {
+        font-weight: bold;
+        font-size: 17px;
+        width: 100px;
+        height: 50px;
+
+    }
+}
+
+@media (max-width: 550px) {
+
+    main .icons {
+        height: 150px;
+        padding-left: 240px;
+    }
+
+    .icons .pote {
+        width: 60px;
+        height: 60px;
+    }
+
+    main .center-box {
+        margin-bottom: 150px;
+    }
+
+}
+
+@media (max-width: 538px) {
+
+    main .main-title {
+        line-height: 70px;
+
+    }
+
+    main .icons {
+        height: 135px;
+        padding-left: 240px;
+
+    }
+
+
+}
+
+@media (max-width: 525px) {
+
+    main .main-title {
+        font-size: 65px;
+        line-height: 65px;
+    }
+
+    .main-title span {
+        margin-right: 220px;
+
+    }
+
+    main .icons {
+        height: 126px;
+    }
+
+    .box-info {
+        padding-bottom: 35px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+}
+
+@media (max-width: 494px) {
+    .box-info {
+        padding-bottom: 15px;
+
+    }
+}
+
+@media (max-width: 485px) {
+
+    main .main-title {
+        font-size: 60px;
+
+    }
+
+    .main-title span {
+        margin-right: 210px;
+
+    }
+
+    main .icons {
+        padding-left: 220px;
+        height: 122px;
+    }
+
+    .icons .pote {
+        width: 55px;
+        height: 55px;
+    }
+
+    .box-info {
+
+        padding-left: 10px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    main .main-title {
+        font-size: 55px;
+
+    }
+
+    .main-title span {
+        margin-right: 190px;
+
+    }
+
+
+}
+
+@media (max-width: 430px) {
+
+    main .main-title {
+        margin-right: 10px;
+        font-size: 53px;
+
+    }
+
+    .main-title span {
+        margin-right: 180px;
+
+    }
+
+    main .icons {
+        padding-left: 200px;
+
+    }
+
+    .icons .pote {
+        width: 53px;
+        height: 53px;
+    }
+
+}
+
+@media (max-width: 410px) {
+
+    main .main-title {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .main-title span {
+        margin-right: 170px;
+
+    }
+
+    main .icons {
+        padding-left: 200px;
+        height: 105px;
+    }
+
+    .icons .pote {
+        width: 52px;
+        height: 52px;
+    }
+
+    .box-info {
+
+        padding-bottom: 30px;
+        padding-left: 10px;
+    }
+
+    .box-contact {
+        height: 260px;
+
+    }
+
+    main .cat-center {
+        top: 300px;
+    }
+
+    .toggle-on {
+        row-gap: 40px;
+    }
+
+    .toggle-on a {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    main .main-title {
+        margin-right: 0;
+    }
+
+    main .icons {
+        padding-left: 190px;
+
+    }
+
+    .icons .pote {
+        width: 48px;
+        height: 48px;
+    }
+
+}
+
+@media (max-width: 370px) {
+
+    main .main-title {
+
+        font-size: 43px;
+        padding-right: 20px;
+        line-height: 50px;
+
+    }
+
+    .main-title span {
+        margin-right: 150px;
+
+    }
+
+    main .icons {
+        padding-left: 170px;
+        height: 97px;
+    }
+
+    .icons .pote {
+        width: 46px;
+        height: 46px;
+    }
+
+    .box-info {
+        padding-bottom: 40px;
+
+    }
+
+
+}
+
+@media (max-width: 350px) {
+
+    main .main-title {
+        font-size: 40px;
+        padding-right: 15px;
+
+    }
+
+    .main-title span {
+        margin-right: 140px;
+
+    }
+
+    main .icons {
+        padding-left: 160px;
+        height: 95px;
+    }
+
+    .icons .pote {
+        width: 44px;
+        height: 44px;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+
+    main .main-title {
+        font-size: 35px;
+        padding-right: 20px;
+        line-height: 43px;
+    }
+
+    .main-title span {
+        margin-right: 120px;
+
+    }
+
+    main .icons {
+        padding-left: 140px;
+        height: 80px;
+    }
+
+    .icons .pote {
+        width: 38px;
+        height: 38px;
+    }
+
+
+    .box-info {
+        padding-bottom: 50px;
+
+    }
+
+    main .cat-center {
+        top: 280px;
+    }
+
+    main .cat-center img {
+
+        width: 250px;
+    }
+
+    .cat-center .circle-cat {
+        width: 250px;
+        height: 250px;
+    }
+
+    .box-contact {
+        height: 240px;
+    }
+}
