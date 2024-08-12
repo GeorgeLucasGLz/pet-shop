@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Header styles remain unchanged */
+
+main {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px; /* Added margin to create space for services section */
+}
+
+main .center-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90vh;
+    min-height: 600px; /* Added min-height to prevent excessive shrinking */
+}
+
+/* Rest of the main styles remain unchanged */
+
+.services-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative; /* Added position relative */
+    z-index: 2; /* Ensure services section is above the hero section */
+}
+
+/* Rest of the services styles remain unchanged */
+
+@media (max-height: 800px) {
+    main {
+        margin-bottom: 50px; /* Reduced margin for smaller heights */
+    }
+
+    main .center-box {
+        min-height: 500px; /* Adjusted min-height for smaller screens */
+    }
+
+    main .main-title {
+        font-size: 100px; /* Reduced font size */
+        line-height: 110px;
+    }
+
+    main .cat-center {
+        top: 80px; /* Adjusted positioning */
+    }
+
+    main .cat-center img,
+    .cat-center .circle-cat {
+        width: 250px;
+        height: 250px;
+    }
+
+    main .pet-sides {
+        top: 320px; /* Adjusted positioning */
+    }
+
+    .pet-sides img {
+        width: 220px;
+        height: 250px;
+    }
+
+    .pet-sides .pet-right {
+        width: 220px;
+        height: 220px;
+    }
+
+    main .icons {
+        height: 220px;
+    }
+
+    .icons .pote {
+        width: 80px;
+        height: 80px;
+    }
+
+    .box-info {
+        height: 300px;
+    }
+
+    .box-contact {
+        height: 345px;
+    }
+}
+
+@media (max-height: 600px) {
+    main {
+        margin-bottom: 30px; /* Further reduced margin for very small heights */
+    }
+
+    main .center-box {
+        min-height: 400px; /* Further adjusted min-height */
+    }
+
+    main .main-title {
+        font-size: 80px; /* Further reduced font size */
+        line-height: 90px;
+    }
+
+    main .cat-center {
+        top: 60px; /* Further adjusted positioning */
+    }
+
+    main .cat-center img,
+    .cat-center .circle-cat {
+        width: 200px;
+        height: 200px;
+    }
+
+    main .pet-sides {
+        top: 280px; /* Further adjusted positioning */
+    }
+
+    .pet-sides img {
+        width: 180px;
+        height: 200px;
+    }
+
+    .pet-sides .pet-right {
+        width: 180px;
+        height: 180px;
+    }
+
+    main .icons {
+        height: 180px;
+    }
+
+    .icons .pote {
+        width: 60px;
+        height: 60px;
+    }
+
+    .box-info {
+        height: 250px;
+    }
+
+    .box-contact {
+        height: 295px;
+    }
+}
+
+/* Rest of the media queries remain unchanged */

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Pet Shop</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-side">
+            <img src="./assets/pata.webp" alt="patinha">
+
+        </div>
+        <nav class="links">
+
+            <a href="#" id="nav-home">Início</a>
+            <a href="#" id="nav-services">Serviços</a>
+            <a href="#" id="nav-products">Produtos</a>
+            <a href="#">Contato</a>
+        </nav>
+
+        <button class="btn-toggle-off" onclick="showToggle()">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+
+        </button>
+
+
+    </header>
+
+    <div class="toggle-on">
+        <a href="#" id="toggle-home">Início</a>
+        <a href="#" id="toggle-services">Serviços</a>
+        <a href="#" id="toggle-products">Produtos</a>
+        <a href="#">Contato</a>
+
+        <button class="btn-close" onclick="turnOffToggle()">
+
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <main>
+        <div class="center-box">
+            <div class="pet-sides">
+                <img class="pet-left" src="./assets/cat2.webp" alt="">
+                <img class="pet-right" src="./assets/dog2.webp" alt="">
+
+            </div>
+            <div class="box-title">
+                <h1 class="main-title">Your Pet Care <br><span>Center</span></h1>
+                <div class="icons">
+                    <img class="pote" src="./assets/pote.webp" alt="">
+                    <img class="pote" src="./assets/dogIcon.webp" alt="">
+                    <img class="pote" src="./assets/food.webp" alt="">
+                </div>
+                <div class="box-info">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="box-contact">
+                    <button id="btn-contact">Contato</button>
+                    <button id="btn-more">Mais</button>
+                </div>
+
+
+            </div>
+            <div class="cat-center">
+                <div class="cat-relative-body">
+                    <div class="cat-circle">
+                        <img src="./assets/cat.webp" alt="">
+                        <div class="circle-cat"></div>
+                    </div>
+
+                    <!--SERVIÇOS-->
+                    <section class="services-section">
+                        <div class="services-header">
+                            <h2 class="services-title">Serviços que Oferecemos</h2>
+                            <p class="services-subtitle">Na PetLand, oferecemos uma ampla gama de serviços para garantir
+                                que seus pets
+                                recebam o melhor cuidado. Descubra como podemos ajudar seus pets a viverem vidas mais
+                                felizes e
+                                saudáveis.</p>
+                        </div>
+                        <div class="services-grid">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-stethoscope"></i>
+                                </div>
+                                <h3 class="service-title">Serviços Veterinários</h3>
+                                <p class="service-description">Nossos veterinários oferecem atendimento médico de
+                                    primeira linha,
+                                    incluindo check-ups, vacinações e serviços de emergência para manter seus pets
+                                    saudáveis e felizes.
+                                </p>
+                            </div>
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </div>
+                                <h3 class="service-title">Loja/Produtos</h3>
+                                <p class="service-description">Descubra uma ampla variedade de produtos de alta
+                                    qualidade em nossa loja,
+                                    incluindo alimentos, brinquedos, suprimentos e acessórios para pets.</p>
+                            </div>
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <h3 class="service-title">Hospedagem para Pets</h3>
+                                <p class="service-description">Precisa de um lugar para seu pet enquanto você viaja?
+                                    Nossa hospedagem
+                                    segura e confortável garante que eles sejam bem cuidados.</p>
+                            </div>
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <h3 class="service-title">Serviços de Reprodução</h3>
+                                <p class="service-description">Nossos serviços profissionais de reprodução ajudam você a
+                                    encontrar o par
+                                    perfeito para seus pets, garantindo filhotes saudáveis e bem criados.</p>
+                            </div>
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                </div>
+                                <h3 class="service-title">Opções de Doação</h3>
+                                <p class="service-description">Faça a diferença na vida de animais necessitados. Nossas
+                                    opções de doação
+                                    permitem que você contribua para o bem-estar de pets menos afortunados.</p>
+                            </div>
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h3 class="service-title">Serviços de Treinamento</h3>
+                                <p class="service-description">Melhore o comportamento do seu pet com nossos serviços de
+                                    treinamento
+                                    especializados. Oferecemos programas personalizados para todos os pets e donos.</p>
+                            </div>
+                        </div>
+
+
+                    </section>
+
+                    <!--PRODUTOS-->
+                    <section class="section-products">
+                        <div class="products-header">
+                            <h2 class="products-title">Nossos Produtos de Alta Qualidade</h2>
+                            <a href="#" class="view-all-btn">Ver Todos Produtos &gt;</a>
+                        </div>
+                        <div class="products-grid">
+                            <div class="product-card">
+
+                                <div class="product-info">
+                                    <img src="/assets/racao.png" alt="Green Tea Cat Litter Pads" id="product-image">
+                                    <h3 class="product-name">Rações Variadas</h3>
+                                    <div class="product-rating">★★★★★</div>
+                                    <p class="product-price">R$ 27,73</p>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-info">
+                                    <img src="/assets/shampoo.webp" alt="Green Tea Cat Litter Pads" id="product-image">
+                                    <h3 class="product-name">Shampoo e Condicionador</h3>
+                                    <div class="product-rating">★★★★★</div>
+                                    <p class="product-price">R$ 33,80</p>
+                                </div>
+                            </div>
+                            <div class="product-card">
+
+                                <div class="product-info">
+                                    <img src="/assets/brinquedo.webp" alt="Green Tea Cat Litter Pads"
+                                        id="product-image">
+                                    <h3 class="product-name">Brinquedos</h3>
+                                    <div class="product-rating">★★★★★</div>
+                                    <p class="product-price">R$ 31,79</p>
+                                </div>
+                            </div>
+                            <div class="product-card">
+
+                                <div class="product-info">
+                                    <img src="/assets/casinha.webp" alt="Green Tea Cat Litter Pads" id="product-image">
+                                    <h3 class="product-name">Caixa de Transporte</h3>
+                                    <div class="product-rating">★★★★★</div>
+                                    <p class="product-price">R$ 87,95</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <footer>
+                        <a href="https://www.freelings.com.br" target="_blank">
+                            <img src="./assets/freelings.webp" alt="Freelings" class="freelings-logo">
+                        </a>
+                        <a href="https://www.freelings.com.br" target="_blank">
+                            <p>&copy; 2024 Freelings. Todos os direitos reservados.</p>
+                        </a>
+                    </footer>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="box-github">
+            <a href="https://www.freelings.com.br" target="_blank">
+                <img src="./assets/freelings.webp" alt="Criador">
+            </a>
+        </div>
+
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
